@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+        <header>
+            <div class="contMenu">
+                <img class="menu" src="./recursos/hamburger.png" alt="Menu hamburguesa">
+            </div>
+    
+            <div class="back_menu"></div>
+            <nav class="nav">
+                <div class="contCerrar">
+                    <span class="cerrarMenu"> X </span>
+                </div>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="reglas.html">Reglas</a></li>
+                </ul>
+                <div class="desarrollo">
+                    <p>By Dani Grecco</p>
+                </div>
+            </nav>
+    </header>
+    <h1>Cómo jugar</h1>
+    <section class="comoJugar">
+
+<div>
+   
+    <h3>Las cartas</h3>
+    <p>
+        El truco argentino se juega a 2 jugadores o por parejas y se utiliza 
+        la baraja española de 40 cartas.
+    </p>
+    <h3>El truco</h3>
+    <p>
+        El objetivo es ir ganando puntos en los lances Truco y Envido, 
+        para conseguir ganar 30 puntos.
+        Y cada jugador recibe 3 cartas con la que disputaran los puntos.
+    </p>
+
+    <p>
+        El lance de truco consiste en disputar 3 manos, una por carta,
+         y lo gana quien logra dos de las tres manos.
+    Cada mano es ganada por la carta más alta según la siguiente jerarquía:
+    </p>
+</div>
+<div class="cartas">
+    <ul>
+        <li>As de espada</li>
+        <li>As de Basto</li>
+        <li>7 de espada</li>
+        <li>7 de Oro</li>
+        <li>3 todos</li>
+        <li>2 todos</li>
+        <li>1 Oro y copa</li>
+        <li>12 todos</li>
+        <li>11 todos</li>
+        <li>10 todos</li>
+        <li>7 copa y basto</li>
+        <li>6 todos</li>
+        <li>5 todos</li>
+        <li>4 todos</li>
+    </ul>
+</div>
+<div>
+
+    <p>
+        El jugador que gana una jugada es quien da comienzo a la siguiente lanzando una carta.
+
+        Si en una jugada dos rivales empatan por jugar cartas del mismo valor, se llama baza parda.
+         En este caso el truco lo gana quien haya conseguido una baza en primer lugar.
+        Si las tres jugadas son pardas, gana la pareja que tiene la mano.
+    </p>
+    <p>
+        Quien gana el truco obtiene 1 punto. Sin embargo, 
+        durante la disputa del truco los jugadores pueden lanzar apuestas incrementales antes de jugar su carta. <br>
+        El rival puede aceptar la apuesta o dar por perdido el lance de truco con el valor que tenga en ese momento.
+        Si se apuesta Truco, quien gana logra 2 puntos.
+        El rival puede aumentar la apuesta con un Retruco, que vale 3 puntos.
+        Finalmente, puede aumentarse hasta Vale 4 (4 puntos).
+    </p>
+    <p>
+        La tercera jugada no se disputa cuando el resultado del truco ya queda decidido al disputar la segunda jugada.
+        Quien tiene malas cartas también puede renunciar a disputar la mano mediante la opción irse al mazo.
+    </p>
+</div>
+<div class="envido">
+
+    <h3>El envido</h3>
+    
+    <p>El lance de Envido se disputa opcionalmente, si algún participante abre una apuesta al llegarle el turno para jugar su primera carta o responder a una apuesta truco. 
+        Si el turno pasa por todos los jugadores sin que apuesten sobre el envido, el lance ya no se disputa.
+    </p>
+    <p>El envido lo gana el jugador que con sus tres cartas obtenga el valor más alto. 
+        Este valor se contabiliza del siguiente modo:
+    </p>
+
+    <ul>
+        <li>En caso de tener 2 cartas de un mismo palo, se suman los índices de ambas y a dicha suma se le añaden 20 más.</li>
+        <li>En caso de tener las 3 cartas de un mismo palo, se suman los dos índices más altos, y a dicha suma se le añaden 20 más.</li>
+        <li>Si las 3 cartas son de diferentes palos, el valor del envido es el índice más alto de las 3 cartas.</li>
+        <li>A estos efectos, el valor de las figuras es cero.</li>
+    </ul>
+    <p>En caso de empate, gana el jugador que es mano</p>
+    <p>Las apuestas posibles en el envido son las siguientes:</p>
+    <ul>
+        <li> <strong>Envido:</strong>  vale 2 puntos.</li>
+        <li><strong>Real envido:</strong> vale 3 puntos.</li>
+        <li><strong>Falta envido:</strong> si el ganador del envido lleva ventaja o su rival no ha alcanzado los 15 puntos (está en malas), gana directamente el chico (partida).
+             En caso contrario, suma la cantidad de puntos que su rival necesitaría para alcanzar los 30 puntos.</li>
+    </ul>
+    <p>
+        La primera apuesta de envido puede ser revocada con un nuevo envido. 
+        El segundo envido y el real envido pueden revocarse con una apuesta superior.
+        Si la primera apuesta es rechazada, el ganador obtiene un punto. Si se rechaza la revocación de una apuesta, 
+        el ganador obtiene la suma de los puntos que el rival ya había apostado.
+    </p>
+    <p>
+        Cuando se cierra una apuesta de envido, y antes de continuar con la disputa del truco, 
+        los jugadores indican inmediatamente su jugada sin necesidad de enseñar sus cartas, 
+        y la puntuación se contabiliza de inmediato.        
+        Si el chico finaliza con la disputa del envido, el lance del truco no se disputa.
+    </p>
+</div>
+    </section>
+   <script src="./app.js"></script>
+</body>
+</html>

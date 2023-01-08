@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./ancho.png" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="clase.js"></script> -->
+    <title>Contador</title>
+</head>
+<body>
+    <header>
+        <div class="contMenu">
+            <img class="menu" src="./recursos/hamburger.png" alt="Menu hamburguesa">
+        </div>
+
+        <div class="back_menu"></div>
+        <nav class="nav">
+            <div class="contCerrar">
+                <span class="cerrarMenu"> X </span>
+            </div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="reglas.html">Reglas</a></li>
+            </ul>
+            <div class="desarrollo">
+                <p>By Dani Grecco</p>
+            </div>
+        </nav>
+       
+    </header>
+    <h1>Contador Truco</h1>
+    <section>
+
+        <div class="jugador1">
+            <div>
+                <h2> Nosotros </h2>
+            </div>
+            <div class="puntos">
+                <p class="puntosJugador1">   </p>
+            </div>
+            <div class="contBotones">
+                <div>
+                    <button class="btnSumar1"> + </button>
+                </div>
+                <div>
+                    <button disabled class="btnRestar1"> - </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="jugador2">
+            <div>
+                <h2>Ellos</h2>
+            </div>
+            <div class="puntos">
+                <p class="puntosJugador2">  </p>
+            </div>
+            <div class="contBotones">
+                <div>
+                    <button class="btnSumar2"> + </button>
+                </div>
+                <div>
+                    <button disabled class="btnRestar2"> - </button>
+                </div>
+            </div>
+        </div>       
+    </section>
+    <section>
+        <button class="reiniciar">
+            Reiniciar puntos
+        </button>
+        <button class="reiniciar reiniciarVictorias">
+            Reiniciar victorias
+        </button>
+    </section>
+
+    <section class="contVictorias">
+        <div class="victorias">
+            <div>
+                <p class="nroVictorias" id="victoria1">0</p>
+            </div>
+            <div>
+                <p class="txtVict">Victorias</p>
+            </div>
+            <div>
+                <p class="nroVictorias" id="victoria2">0</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="modal" >
+        <div class="modal__container">
+
+            <img src="./recursos/fest.svg" alt="fiesta" class="modal__img">
+            <h2 class="modal__title">Felicitaciones</h2>
+            <p class="modal_p"> Ganador Nosotros</p>
+            <p class="modal_cerrar"> Cerrar </p>
+
+        </div>
+    </section>
+    <section class="modal modal2" >
+        <div class="modal__container">
+
+            <img src="./recursos/fest.svg" alt="fiesta" class="modal__img">
+            <h2 class="modal__title">Felicitaciones</h2>
+            <p class="modal_p"> Ganador Ellos</p>
+            <p class="modal_cerrar modal_cerrar2"> Cerrar </p>
+
+        </div>
+    </section>
+
+    
+
+    <script src="app.js"></script>  
+</body>
+</html>
